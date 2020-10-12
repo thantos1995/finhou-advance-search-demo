@@ -5,11 +5,11 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --env.NODE_ENV=production --config webpack/prod.config.js && npx styleguidist build",
+    "build": "webpack --env.NODE_ENV=production --config webpack/prod.config.js",
     "start": "webpack-dev-server --env.NODE_ENV=development --config webpack/dev.config.js",
     "react-lint": "eslint src/react-advance-search/**/*.js src/react-advance-search/**/*.jsx",
     "doc": "npx styleguidist server",
-    "doc-react": "npx styleguidist build"
+    "build-doc": "npx styleguidist build"
   },
   "author": "",
   "license": "ISC",
