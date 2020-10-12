@@ -10,5 +10,3 @@ Những người đóng góp vào dự án
 Vì đây là project react đầu tiên của mình nên mong những người tiếp nhận app sau này tiếp tục cải thiện project
 
 Nếu có vấn đề gì xin liên hệ địa chỉ email **iamreallyasuperstar@gmail.com**
-
-test
