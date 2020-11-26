@@ -14,7 +14,7 @@ export default function ItemContainer(props) {
   for (let i = 0; i < rowsNumber; i += 1) {
     const columnContent = paginateArrayHelper(componentList, columns, i);
     const rowItem = (
-      <div key={`row-${content.length + 1}`} className="row no-gutters">
+      <div key={`row-${content.length + 1}`} className="row">
         {columnContent.map((value) => <div key={itemKey += 1} className={`col-${12 / columns}`}>{value}</div>)}
       </div>
     );

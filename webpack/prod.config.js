@@ -12,6 +12,7 @@ module.exports = (env) => merge(baseConfig(env), {
     filename: '[name].entry.js',
     path: path.resolve(__dirname, '..' , '..', 'wwwroot'),
     // path: path.resolve(__dirname, 'dist')
+    publicPath: '/wwwroot',
   },
   mode: 'production',
   module: {

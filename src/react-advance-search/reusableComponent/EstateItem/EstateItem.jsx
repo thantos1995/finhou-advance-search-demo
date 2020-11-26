@@ -54,7 +54,7 @@ export default function EstateItem(props) {
           </div>
           {/* {{html PropertyCode}} */}
         </div>
-        <div className="card-body">
+        <div className="card-body p-4">
           <div className="item-card9">
             <div className="item-card2-text">
               <a href={content.propertyUrl} className="text-dark" target="_blank" rel="noreferrer">

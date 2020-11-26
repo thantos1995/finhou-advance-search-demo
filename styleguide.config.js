@@ -12,7 +12,7 @@ module.exports = {
       content: './src/react-advance-search/doc/installation.md'
     },
     {
-      name: 'Giao diện',
+      name: 'React Component',
       components: './src/react-advance-search/**/*.jsx',
       exampleModule: 'collapse',
       usageMode: 'expand'

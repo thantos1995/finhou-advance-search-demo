@@ -7,10 +7,12 @@ import SearchHeader from './searchHeader.jsx';
 import SearchMap from './searchMap.jsx';
 import { googleMapApiKey } from '../config/config';
 /**
- * Component cha của app tìm kiếm nâng cao.
+ * Là Component cha của app tìm kiếm nâng cao, tại component có tác dung:
+ * - Là controller cho search form
+ * - Lấy dữ liệu vùng miền từ api
+ * - Từ dữ liệu vùng miền tìm danh sách bất động sản nằm trong nó
  */
 export default function App() {
-  /** state cho controlled form tìm kiếm */
   const [searchInput, updateSearchInput] = useState({
     searchText: '',
   });

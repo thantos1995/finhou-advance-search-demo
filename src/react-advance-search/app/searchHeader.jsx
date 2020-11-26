@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { searchFormInputShape, searchFormInputDefault } from '../objectType/searchFormInput';
 import InputWithSuggest from '../reusableComponent/inputSuggest/inputWithSuggest.jsx';
 
 export default function SearchHeader(props) {
@@ -39,7 +38,9 @@ export default function SearchHeader(props) {
 }
 
 SearchHeader.propTypes = {
-  formInput: PropTypes.shape(searchFormInputShape),
+  formInput: PropTypes.shape({
+    searchText: PropTypes.string,
+  }),
   handleChange: PropTypes.objectOf(PropTypes.func),
   searchSubmitHandle: PropTypes.func,
 };
@@ -47,5 +48,7 @@ SearchHeader.propTypes = {
 SearchHeader.defaultProps = {
   handleChange: () => {},
   searchSubmitHandle: () => { console.log('submit'); },
-  formInput: searchFormInputDefault,
+  formInput: {
+    searchText: '',
+  },
 };
